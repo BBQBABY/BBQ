@@ -4,17 +4,17 @@
 ============Quantumultx===============
 [task_local]
 #逛PLUS抽京豆
-18 1 * * * https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js, tag=逛PLUS抽京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+13 1,19 * * * https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js, tag=逛PLUS抽京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "18 1 * * *" script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js,tag=逛PLUS抽京豆
+cron "13 1,19 * * *" script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js,tag=逛PLUS抽京豆
 
 ===============Surge=================
-逛PLUS抽京豆 = type=cron,cronexp="18 1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js
+逛PLUS抽京豆 = type=cron,cronexp="13 1,19 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js
 
 ============小火箭=========
-逛PLUS抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js, cronexpr="18 1 * * *", timeout=3600, enable=true
+逛PLUS抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/BBQBABY/BBQ/main/jd_plusLottery.js, cronexpr="13 1,19 * * *", timeout=3600, enable=true
 */
 const $ = new Env('逛PLUS抽京豆');
 const notify = $.isNode() ? require('./sendNotify') : '';
