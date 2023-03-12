@@ -12,8 +12,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let message = '', allMessage = '';
 let cookiesArr = [], cookie = '';
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-let appIdArr = ["1FVVXwKiO","1FVRZxKiD"];
-let appNameArr = ["青年就是干","超级转盘"];
+let appIdArr = ["1FFVWyqyD"];
+let appNameArr = ["踏海寻村"];
 let appId, appName;
 $.shareCode = [];
 if ($.isNode()) {
